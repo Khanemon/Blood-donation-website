@@ -119,14 +119,14 @@ header{
     justify-content: space-evenly;
     align-items: center;
     padding-right: 1rem;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 .home__icn{
     padding: none;
 
 }
 .nav__link{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: black;
     cursor: pointer;
     padding: 1rem;
@@ -139,83 +139,46 @@ header{
     border-radius: 0.6rem;
     transform: var(--scale);
 }
-.signin__tex{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
 .sign__in{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
     text-decoration: none;
-    font-size: 2.5rem;
-    color: #ed1c24;
     cursor: pointer;
     padding: 1rem;
-    transition: all 0.2s linear;
     box-shadow: #ed1c24 0px 1px 1px, #ed1c24 0px 0px 0px 1px;
-    /* box-shadow: 0.1rem 0.1rem 0.1rem #ed1c24 , -0.1rem -0.1rem 0.1rem #ed1c24; */
     border-radius: 2.5rem;
+    color: #ed1c24;
+    transition: all 0.2s linear;
     position: relative;
-    right: 4rem;
+    right: 7rem;
+}
+.sin__din{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 .sign__in:hover{
     background-color: #ed1c24;
-    color: white !important;
-    border-radius: 2.5rem;
+    color: white;
     transform: var(--scale);
-    
 }
-
-/* .nav__signin{
-    gap: 2rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    transition: all 0.4s linear;
-} */
-/* .signin__icn{
-    color: #ed1c24;
-    font-size: 2.5rem;
-    display: block;
-}
-
-.nav__signin:hover{
-    background-color: #ed1c24;
-    color: white;
-    border-radius: 2rem;
-    transform: var(--scale);
-} */
-/* .signin__icn:hover{
-    color: white;
-}
-.signin__tex:hover{
-    color: white;
-} */
-/* nav ul li{
-    padding: 1rem;
-    transition: all 0.4s;
-    display: block;
-}
-nav ul li:hover{
-    background-color: #54c3bb;
-    
-}
- */
-
-/* header ends here */
 
 /* ===================================== Slider CSS Starts ================================== */
-.slider-detail{
-    height: 80vh;
-    background-image: url("slide-02.jpg");
-    background-repeat: no-repeat;
-    background-position: center; /*tihs element canot add with only baccground property */
-    /* background-attachment: fixed; tihs element canot add with only baccground property */
-    background-size: cover;
-    /* filter: saturate(0); */
-}
+
 .slider-detail{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    min-height: 80vh;
+    background-image: url("slide-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /*tihs element canot add with only baccground property */
+    /* background-attachment: fixed; tihs element canot add with only baccground property */
+    /* filter: saturate(0); */
 }
 .slider__heading{
     color: white;
@@ -237,16 +200,14 @@ nav ul li:hover{
     border-radius: 2rem;
 }
 .slbtn__design{
-    
-    font-size: 4rem;
-    padding: 1rem;
-    background-color: #ed1c24;
-    border-color: #ed1c24;
+    background-color: #007bff;
     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
     cursor: pointer;
-    text-decoration: none;
     margin-top: 5rem;
-    
 }
   /* @media screen and (max-width: 1180px) {
     .slider-detail .carousel-caption {
@@ -270,7 +231,7 @@ nav ul li:hover{
 
 /* ============================= about-me section starts here ============================= */
 #blog-about{
-    height: 90vh;
+    min-height: 90vh;
     background-color: white;
     display: flex;
     flex-direction: column;
