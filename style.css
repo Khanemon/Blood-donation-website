@@ -68,12 +68,14 @@ img{
 }
 /* reset code and common ends here. */
 
-/* my Website color
-color: #ed1c24
-color: #c4161c
-color: #54c3bb
-color: #419b96
- */
+.my-Website-color{
+    color: #ed1c24;
+    color: #c4161c;
+    color: #54c3bb;
+    color: #419b96;
+}
+
+
 
 /* header starts here */
 header{
@@ -200,14 +202,17 @@ header{
     border-radius: 2rem;
 }
 .slbtn__design{
-    background-color: #007bff;
+    background-color: #c4161c;;
     color: white;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
     font-size: 2rem;
     cursor: pointer;
     margin-top: 5rem;
+}
+.btn2{
+    background-color: #419b96;
 }
   /* @media screen and (max-width: 1180px) {
     .slider-detail .carousel-caption {
